@@ -1,0 +1,8 @@
+version: '2'
+services:
+ api:
+    build: .
+    container_name: manny_test_api_pi
+    ports:
+     - "8001:8001"
+    image: "mannyapipy:${IMAGE_VERSION}"
